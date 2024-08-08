@@ -13,9 +13,12 @@ class StoryCardCollectionViewCell: UICollectionViewCell {
     
     private var screen : StoryCardCollectionViewCellScreen = StoryCardCollectionViewCellScreen()
     
+    private var viewModal : StoryCardViewModel?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configScreen()
+        screen.configProtocolsCollectionView(delegate: self, dataSource: self)
     }
     
     required init?(coder: NSCoder) {
@@ -29,4 +32,21 @@ class StoryCardCollectionViewCell: UICollectionViewCell {
         
     }
     
+    public func setupCell(listStory: [Story]){
+        viewModal = StoryCardViewModel(listStory: listStory)
+    }
+    
+}
+extension StoryCardCollectionViewCell : UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        viewModal?.numberOfItems ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: 120)
+    }
 }
