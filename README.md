@@ -33,7 +33,7 @@ Open BackFrontNFTApp.xcodeproj in Xcode.
 Select a target device or simulator and click the 'Run' button in Xcode.
 click the 'Run' button in Xcode.
 
-___
+
 
 ## Portugues-BR ![Brazil](https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/br.png "Brazil")
 
