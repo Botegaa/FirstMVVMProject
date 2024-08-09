@@ -24,10 +24,10 @@ To get this project up and running on your local machine, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https:https://github.com/Botegaa/BackFront-NFTApp
+    git clone https://github.com/Botegaa/FirstMVVMProject
 
 - **Open the Project:**
-Open BackFrontNFTApp.xcodeproj in Xcode.
+Open FirstMVVMProject.xcodeproj in Xcode.
 
 - **Build and Run:**
 Select a target device or simulator and click the 'Run' button in Xcode.
@@ -60,5 +60,12 @@ Para configurar este projeto e executá-lo em sua máquina local, siga estas eta
 ### Instalação
 
 1. **Clone o Repositório:**
-   ```bash
-   git clone https://github.com/Botegaa/BackFront-NFTApp
+    ```bash
+    git clone https://github.com/Botegaa/FirstMVVMProject
+
+ - **Abra o Projeto:**
+Abra o arquivo FirstMVVMProject.xcodeproj no Xcode.
+
+- **Compile e Execute:**
+Selecione um dispositivo ou simulador alvo e clique no botão 'Executar' no Xcode.
+
