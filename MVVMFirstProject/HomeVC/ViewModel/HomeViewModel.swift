@@ -23,7 +23,7 @@ class HomeViewModel {
         story
     }
     
-    public var numberOfItems: Int {
+    public var numberOfItems: Int { //Caso Precise Implementar alguma logica no numero de celulas
         1
     }
     public func sizeForItem(indexPath: IndexPath, frame: CGRect) -> CGSize {
