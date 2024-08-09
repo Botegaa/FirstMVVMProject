@@ -31,8 +31,7 @@ class HomeScreen: UIView {
         backgroundColor = .appBackgroundColor
         addSubview(collectionView)
         configConstraints()
-        backgroundColor = .red
-    }
+   }
     
     
     

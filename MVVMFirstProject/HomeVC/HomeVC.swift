@@ -26,11 +26,12 @@ class HomeVC: UIViewController {
 }
 extension HomeVC : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        viewModel.numberOfItems
+        viewModel.numberOfItems  
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StoryCardCollectionViewCell.identifier, for: indexPath) as? StoryCardCollectionViewCell
+        cell?.setupCell(listStory: viewModel.getListStory)
         return cell ?? UICollectionViewCell()
     }
     
