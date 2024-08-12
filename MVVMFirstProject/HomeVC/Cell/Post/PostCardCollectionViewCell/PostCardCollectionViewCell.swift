@@ -9,9 +9,11 @@ import UIKit
 
 class PostCardCollectionViewCell: UICollectionViewCell {
     
-    static let identifierr : String = "PostCardCollectionViewCell"
+    static let identifier : String = "PostCardCollectionViewCell"
     
     private var screen : PostCardCollectionViewCellScreen = PostCardCollectionViewCellScreen()
+    
+    private var viewModal : PostCardViewModal?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -30,10 +32,14 @@ class PostCardCollectionViewCell: UICollectionViewCell {
         
     }
     
+    public func setupCell(listPosts:[Posts]){
+        viewModal = PostCardViewModal(listPosts: listPosts)
+   }
+    
 }
 extension PostCardCollectionViewCell : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return viewModal?.numberOfItems ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

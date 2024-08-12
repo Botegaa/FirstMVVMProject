@@ -11,16 +11,12 @@ class HomeViewModel {
     
     
     private var posts = [
-        Posts(profileImage: "img2", userName:
-            "jack", postImage: "post1"),
-        Posts(profileImage: "img4", userName:
-            "samuel", postImage: "post2"),
-        Posts(profileImage: "img3", userName:
-            "carolina", postImage: "post3"),
-        Posts(profileImage: "img4", userName:
-            "puggy_101", postImage: "post4"),
+        Posts(profileImage: "img2", userName:"jack", postImage: "post1"),
+        Posts(profileImage: "img4", userName:"samuel", postImage: "post2"),
+        Posts(profileImage: "img3", userName:"carolina", postImage: "post3"),
+        Posts(profileImage: "img4", userName:"puggy_101", postImage: "post4"),
  ]
-    public var getListPost: [Posts]{
+    public var getListPosts: [Posts]{
         posts
     }
     

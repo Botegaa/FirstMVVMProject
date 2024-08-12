@@ -18,6 +18,7 @@ class HomeScreen: UIView {
         cv.showsHorizontalScrollIndicator = false
         cv.backgroundColor = .clear
         cv.register(StoryCardCollectionViewCell.self, forCellWithReuseIdentifier: StoryCardCollectionViewCell.identifier)
+        cv.register(PostCardCollectionViewCell.self, forCellWithReuseIdentifier: PostCardCollectionViewCell.identifier)
         return cv
     }()
     

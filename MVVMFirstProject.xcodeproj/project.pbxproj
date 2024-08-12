@@ -25,6 +25,7 @@
 		36B823A22C6477AE00DD01B1 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B823A12C6477AE00DD01B1 /* Story.swift */; };
 		36B823A72C6597C900DD01B1 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B823A62C6597C900DD01B1 /* StoryCollectionViewCell.swift */; };
 		36B823AA2C659AC800DD01B1 /* StoryCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B823A92C659AC800DD01B1 /* StoryCollectionViewCellScreen.swift */; };
+		36D39A972C69B219005F5368 /* PostCardViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D39A962C69B219005F5368 /* PostCardViewModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		36B823A12C6477AE00DD01B1 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		36B823A62C6597C900DD01B1 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		36B823A92C659AC800DD01B1 /* StoryCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCellScreen.swift; sourceTree = "<group>"; };
+		36D39A962C69B219005F5368 /* PostCardViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardViewModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		361859842C669A83002685E0 /* PostCardCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				36D39A952C69B1CC005F5368 /* ViewModal */,
 				361859872C669B0F002685E0 /* Screen */,
 				361859852C669AC7002685E0 /* PostCardCollectionViewCell.swift */,
 			);
@@ -223,6 +226,14 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		36D39A952C69B1CC005F5368 /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				36D39A962C69B219005F5368 /* PostCardViewModal.swift */,
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,6 +316,7 @@
 				36B823562C63FAB000DD01B1 /* AppDelegate.swift in Sources */,
 				36B823702C640C2100DD01B1 /* UIColor + Extension.swift in Sources */,
 				36B8236E2C64066000DD01B1 /* UIView + Extension.swift in Sources */,
+				36D39A972C69B219005F5368 /* PostCardViewModal.swift in Sources */,
 				36B823582C63FAB000DD01B1 /* SceneDelegate.swift in Sources */,
 				36B8239C2C646DEB00DD01B1 /* StoryCardCollectionViewCellScreen.swift in Sources */,
 				36B823A22C6477AE00DD01B1 /* Story.swift in Sources */,
