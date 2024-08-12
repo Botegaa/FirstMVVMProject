@@ -81,7 +81,6 @@
 		361859842C669A83002685E0 /* PostCardCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				3618598B2C66B642002685E0 /* ViewModal */,
 				361859872C669B0F002685E0 /* Screen */,
 				361859852C669AC7002685E0 /* PostCardCollectionViewCell.swift */,
 			);
@@ -94,13 +93,6 @@
 				361859882C669B42002685E0 /* PostCardCollectionViewCellScreen.swift */,
 			);
 			path = Screen;
-			sourceTree = "<group>";
-		};
-		3618598B2C66B642002685E0 /* ViewModal */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModal;
 			sourceTree = "<group>";
 		};
 		36B823492C63FAB000DD01B1 = {

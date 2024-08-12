@@ -9,6 +9,8 @@ import UIKit
 
 class PostCardCollectionViewCell: UICollectionViewCell {
     
+    static let identifierr : String = "PostCardCollectionViewCell"
+    
     private var screen : PostCardCollectionViewCellScreen = PostCardCollectionViewCellScreen()
     
     override init(frame: CGRect) {
