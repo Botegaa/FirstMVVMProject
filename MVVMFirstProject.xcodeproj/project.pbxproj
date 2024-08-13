@@ -26,6 +26,8 @@
 		36B823A72C6597C900DD01B1 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B823A62C6597C900DD01B1 /* StoryCollectionViewCell.swift */; };
 		36B823AA2C659AC800DD01B1 /* StoryCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B823A92C659AC800DD01B1 /* StoryCollectionViewCellScreen.swift */; };
 		36D39A972C69B219005F5368 /* PostCardViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D39A962C69B219005F5368 /* PostCardViewModal.swift */; };
+		36D39A9A2C6AF1F2005F5368 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D39A992C6AF1F2005F5368 /* PostCollectionViewCell.swift */; };
+		36D39A9D2C6AF283005F5368 /* PostCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D39A9C2C6AF283005F5368 /* PostCollectionViewCellScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		36B823A62C6597C900DD01B1 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		36B823A92C659AC800DD01B1 /* StoryCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 		36D39A962C69B219005F5368 /* PostCardViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardViewModal.swift; sourceTree = "<group>"; };
+		36D39A992C6AF1F2005F5368 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		36D39A9C2C6AF283005F5368 /* PostCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		361859842C669A83002685E0 /* PostCardCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				36D39A982C6AF1CB005F5368 /* PostCollectionViewCell */,
 				36D39A952C69B1CC005F5368 /* ViewModal */,
 				361859872C669B0F002685E0 /* Screen */,
 				361859852C669AC7002685E0 /* PostCardCollectionViewCell.swift */,
@@ -234,6 +239,23 @@
 			path = ViewModal;
 			sourceTree = "<group>";
 		};
+		36D39A982C6AF1CB005F5368 /* PostCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				36D39A9B2C6AF233005F5368 /* Screen */,
+				36D39A992C6AF1F2005F5368 /* PostCollectionViewCell.swift */,
+			);
+			path = PostCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		36D39A9B2C6AF233005F5368 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				36D39A9C2C6AF283005F5368 /* PostCollectionViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36B8236B2C63FE3A00DD01B1 /* HomeScreen.swift in Sources */,
+				36D39A9D2C6AF283005F5368 /* PostCollectionViewCellScreen.swift in Sources */,
 				36B823AA2C659AC800DD01B1 /* StoryCollectionViewCellScreen.swift in Sources */,
 				361859862C669AC7002685E0 /* PostCardCollectionViewCell.swift in Sources */,
 				36B8235A2C63FAB000DD01B1 /* HomeVC.swift in Sources */,
@@ -312,6 +335,7 @@
 				36B823952C642E2100DD01B1 /* HomeViewModel.swift in Sources */,
 				36B823A72C6597C900DD01B1 /* StoryCollectionViewCell.swift in Sources */,
 				36B8239F2C6475FD00DD01B1 /* StoryCardViewModel.swift in Sources */,
+				36D39A9A2C6AF1F2005F5368 /* PostCollectionViewCell.swift in Sources */,
 				361859892C669B42002685E0 /* PostCardCollectionViewCellScreen.swift in Sources */,
 				36B823562C63FAB000DD01B1 /* AppDelegate.swift in Sources */,
 				36B823702C640C2100DD01B1 /* UIColor + Extension.swift in Sources */,
