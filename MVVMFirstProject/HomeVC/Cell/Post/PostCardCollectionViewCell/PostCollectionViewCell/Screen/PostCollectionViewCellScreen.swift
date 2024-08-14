@@ -46,11 +46,22 @@ class PostCollectionViewCellScreen: UIView {
         return img
     }()
     
+    lazy var userNameLabel : UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints  = false
+        label.text = "testado ne amigao"
+        label.font = UIFont.systemFont(ofSize: 14,weight: .semibold)
+        return label
+        
+        
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(cardView)
         cardView.addSubview(likeImageView)
         cardView.addSubview(profileImageView)
+        cardView.addSubview(userNameLabel)
         configConstraints()
     }
     
@@ -73,7 +84,11 @@ class PostCollectionViewCellScreen: UIView {
             profileImageView.heightAnchor.constraint(equalToConstant: 30),
             profileImageView.widthAnchor.constraint(equalToConstant: 30),
             profileImageView.topAnchor.constraint(equalTo: cardView.topAnchor,constant: 17),
-            profileImageView.leadingAnchor.constraint(equalTo: cardView.leadingAnchor,constant: 20)
+            profileImageView.leadingAnchor.constraint(equalTo: cardView.leadingAnchor,constant: 20),
+            
+            userNameLabel.leadingAnchor.constraint(equalTo: profileImageView.leadingAnchor ,constant: 10),
+            userNameLabel.topAnchor.constraint(equalTo: cardView.topAnchor, constant: 24),
+            userNameLabel.trailingAnchor.constraint(equalTo: likeImageView.leadingAnchor,constant: -20),
         ])
     }
     
