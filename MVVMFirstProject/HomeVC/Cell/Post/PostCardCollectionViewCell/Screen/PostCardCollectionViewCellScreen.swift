@@ -16,7 +16,7 @@ class PostCardCollectionViewCellScreen: UIView {
         layout.scrollDirection = .vertical
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.translatesAutoresizingMaskIntoConstraints = false
-//        cv.register(StoryCollectionViewCell.self, forCellWithReuseIdentifier: StoryCollectionViewCell.identifier)
+        cv.register(PostCollectionViewCell.self, forCellWithReuseIdentifier: PostCollectionViewCell.identifier)
         cv.showsVerticalScrollIndicator = false
         cv.backgroundColor = .clear
         return cv

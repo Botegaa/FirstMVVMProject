@@ -13,7 +13,7 @@ class PostCardCollectionViewCell: UICollectionViewCell {
     
     private var screen : PostCardCollectionViewCellScreen = PostCardCollectionViewCellScreen()
     
-    private var viewModal : PostCardViewModal?
+    private var viewModel : PostCardViewModal?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -33,17 +33,21 @@ class PostCardCollectionViewCell: UICollectionViewCell {
     }
     
     public func setupCell(listPosts:[Posts]){
-        viewModal = PostCardViewModal(listPosts: listPosts)
+        viewModel = PostCardViewModal(listPosts: listPosts)
    }
     
 }
 extension PostCardCollectionViewCell : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModal?.numberOfItems ?? 0
+        return viewModel?.numberOfItems ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        guard let viewModal = viewModel else {return UICollectionViewCell()}
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PostCollectionViewCell.identifier, for: indexPath) as? PostCollectionViewCell
+        cell?.setupCell(data: viewModal.loadCurrentStory(indexPath: indexPath))
+        return cell ?? UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

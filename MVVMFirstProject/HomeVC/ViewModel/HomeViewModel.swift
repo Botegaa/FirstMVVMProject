@@ -14,7 +14,7 @@ class HomeViewModel {
         Posts(profileImage: "img2", userName:"jack", postImage: "post1"),
         Posts(profileImage: "img4", userName:"samuel", postImage: "post2"),
         Posts(profileImage: "img3", userName:"carolina", postImage: "post3"),
-        Posts(profileImage: "img4", userName:"puggy_101", postImage: "post4"),
+        Posts(profileImage: "img6", userName:"puggy_101", postImage: "post4"),
  ]
     public var getListPosts: [Posts]{
         posts
@@ -35,7 +35,7 @@ class HomeViewModel {
     }
     
     public var numberOfItems: Int { //Caso Precise Implementar alguma logica no numero de cell
-        1
+        2
     }
     public func sizeForItem(indexPath: IndexPath, frame: CGRect) -> CGSize {
         if indexPath.row == 0 {
