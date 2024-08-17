@@ -11,6 +11,7 @@ Responsive Design: Optimized for iOS devices, ensuring a smooth and consistent e
 
 - **Swift:** The programming language used for development.
 - **UIKit:** Framework for designing the user interface and handling user interactions.
+- **FirebaseAuth:** Framework for authentication login and register.
 
 ## Getting Started
 
@@ -48,6 +49,7 @@ Bem-vindo ao BackFront Social App! Este projeto é o meu primeiro projeto com ar
 
 - **Swift:** A linguagem de programação utilizada para o desenvolvimento.
 - **UIKit:** Framework para design da interface do usuário e manipulação de interações.
+- **Firebase:** Framework para autenticacao e login do usuario.
 
 ## Começando
 
