@@ -20,7 +20,7 @@ class LoginViewModal {
     
     public func delegate(delegate:LoginViewModelProtocol?){
         self.delegate = delegate
-        
+        //git test
     }
     
     // Método para login
