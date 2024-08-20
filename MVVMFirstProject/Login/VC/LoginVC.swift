@@ -40,6 +40,7 @@ extension LoginVC: LoginViewModelProtocol{
     
     func errorLogin(errorMessage: String) {
         print("batata")
+        Alert(controller: self).showAlertInformation(title: "Ops, error Login!", message: errorMessage)
     }
     
     
