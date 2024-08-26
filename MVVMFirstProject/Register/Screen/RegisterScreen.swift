@@ -56,7 +56,7 @@ class RegisterScreen: UIView {
     lazy var registerButton: UIButton = {
         let button: UIButton = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Registrar", for: .normal)
+        button.setTitle("Cadastre-se", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .darkGray.withAlphaComponent(0.6)
@@ -68,7 +68,6 @@ class RegisterScreen: UIView {
     }()
     
     @objc func tappedRegisterButton(_ sender: UIButton) {
-        print("SIUUU")
         delegate?.tappedRegisterButton()
     }
     

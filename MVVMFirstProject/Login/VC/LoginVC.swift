@@ -18,6 +18,10 @@ class LoginVC: UIViewController {
         loginScreen = LoginScreen()
         view = loginScreen
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,8 +42,15 @@ extension LoginVC: LoginViewModelProtocol{
         
     }
     
+    func goToRegister() {
+        let vc: RegisterVC = RegisterVC()
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    
+    
     func errorLogin(errorMessage: String) {
-        print("batata")
         Alert(controller: self).showAlertInformation(title: "Ops, error Login!", message: errorMessage)
     }
     
@@ -47,6 +58,10 @@ extension LoginVC: LoginViewModelProtocol{
 }
 
 extension LoginVC: LoginScreenProtocol{
+    func tappedRegisterButton() {
+        goToRegister()
+    }
+    
     func tappedLoginButton() {
         viewModel.login(email: loginScreen?.emailTextField.text ?? "", password: loginScreen?.passwordTextField.text ?? "")
     }
@@ -67,9 +82,9 @@ extension LoginVC: UITextFieldDelegate {
         
         if !email.isEmpty && !password.isEmpty{
             loginScreen?.loginButton.isEnabled = true
-            loginScreen?.loginButton.backgroundColor = .darkGray
+            loginScreen?.loginButton.backgroundColor = .systemBlue
         }else{
-            loginScreen?.loginButton.backgroundColor = .darkGray.withAlphaComponent(0.6)
+            loginScreen?.loginButton.backgroundColor = .lightGray.withAlphaComponent(0.6)
             loginScreen?.loginButton.isEnabled = false
         }
     }

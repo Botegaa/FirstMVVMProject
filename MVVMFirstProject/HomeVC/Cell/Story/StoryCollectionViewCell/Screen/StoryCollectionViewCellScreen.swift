@@ -67,7 +67,7 @@ class StoryCollectionViewCellScreen: UIView {
             userNameLabel.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 10),
             userNameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
             userNameLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 10),
-            userNameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 10),
+            userNameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
         ])
     }
     
