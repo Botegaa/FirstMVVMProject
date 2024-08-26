@@ -12,7 +12,7 @@
 		3618598D2C66D4F9002685E0 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3618598C2C66D4F9002685E0 /* Posts.swift */; };
 		36218E442C76882D00C7D735 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36218E432C76882D00C7D735 /* RegisterViewModel.swift */; };
 		36218E462C76886300C7D735 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36218E452C76886300C7D735 /* RegisterScreen.swift */; };
-		36218E482C76887E00C7D735 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36218E472C76887E00C7D735 /* RegisterViewController.swift */; };
+		36218E482C76887E00C7D735 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36218E472C76887E00C7D735 /* RegisterVC.swift */; };
 		36A0C8352C7436E500EBAB9D /* LoginViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0C8302C7436E500EBAB9D /* LoginViewModal.swift */; };
 		36A0C8362C7436E500EBAB9D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0C8322C7436E500EBAB9D /* LoginVC.swift */; };
 		36A0C8372C7436E500EBAB9D /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0C8342C7436E500EBAB9D /* LoginScreen.swift */; };
@@ -67,7 +67,7 @@
 		3618598C2C66D4F9002685E0 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		36218E432C76882D00C7D735 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		36218E452C76886300C7D735 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
-		36218E472C76887E00C7D735 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		36218E472C76887E00C7D735 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		36A0C8302C7436E500EBAB9D /* LoginViewModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModal.swift; sourceTree = "<group>"; };
 		36A0C8322C7436E500EBAB9D /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		36A0C8342C7436E500EBAB9D /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		36218E402C7687ED00C7D735 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				36218E472C76887E00C7D735 /* RegisterViewController.swift */,
+				36218E472C76887E00C7D735 /* RegisterVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -520,7 +520,7 @@
 				36218E442C76882D00C7D735 /* RegisterViewModel.swift in Sources */,
 				36B823582C63FAB000DD01B1 /* SceneDelegate.swift in Sources */,
 				36B8239C2C646DEB00DD01B1 /* StoryCardCollectionViewCellScreen.swift in Sources */,
-				36218E482C76887E00C7D735 /* RegisterViewController.swift in Sources */,
+				36218E482C76887E00C7D735 /* RegisterVC.swift in Sources */,
 				36B823A22C6477AE00DD01B1 /* Story.swift in Sources */,
 				3618598D2C66D4F9002685E0 /* Posts.swift in Sources */,
 			);
