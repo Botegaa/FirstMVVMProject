@@ -13,6 +13,8 @@
 		36218E442C76882D00C7D735 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36218E432C76882D00C7D735 /* RegisterViewModel.swift */; };
 		36218E462C76886300C7D735 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36218E452C76886300C7D735 /* RegisterScreen.swift */; };
 		36218E482C76887E00C7D735 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36218E472C76887E00C7D735 /* RegisterVC.swift */; };
+		368FDAE32C7F93D5001B8745 /* HomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 368FDAE22C7F93D5001B8745 /* HomeData.json */; };
+		368FDAE62C7F977D001B8745 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368FDAE52C7F977D001B8745 /* HomeService.swift */; };
 		36A0C8352C7436E500EBAB9D /* LoginViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0C8302C7436E500EBAB9D /* LoginViewModal.swift */; };
 		36A0C8362C7436E500EBAB9D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0C8322C7436E500EBAB9D /* LoginVC.swift */; };
 		36A0C8372C7436E500EBAB9D /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0C8342C7436E500EBAB9D /* LoginScreen.swift */; };
@@ -68,6 +70,8 @@
 		36218E432C76882D00C7D735 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		36218E452C76886300C7D735 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		36218E472C76887E00C7D735 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		368FDAE22C7F93D5001B8745 /* HomeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeData.json; sourceTree = "<group>"; };
+		368FDAE52C7F977D001B8745 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		36A0C8302C7436E500EBAB9D /* LoginViewModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModal.swift; sourceTree = "<group>"; };
 		36A0C8322C7436E500EBAB9D /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		36A0C8342C7436E500EBAB9D /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -199,6 +203,22 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		368FDAE12C7F93BC001B8745 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				368FDAE22C7F93D5001B8745 /* HomeData.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		368FDAE42C7F9700001B8745 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				368FDAE52C7F977D001B8745 /* HomeService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		36A0C82E2C7436E500EBAB9D /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +280,8 @@
 		36B823542C63FAB000DD01B1 /* MVVMFirstProject */ = {
 			isa = PBXGroup;
 			children = (
+				368FDAE42C7F9700001B8745 /* Service */,
+				368FDAE12C7F93BC001B8745 /* Mock */,
 				36218E3D2C7687CB00C7D735 /* Register */,
 				36AF36022C74FFFE00C339BD /* Alert */,
 				36A0C82E2C7436E500EBAB9D /* Login */,
@@ -408,6 +430,7 @@
 				36B8234E2C63FAB000DD01B1 /* Sources */,
 				36B8234F2C63FAB000DD01B1 /* Frameworks */,
 				36B823502C63FAB000DD01B1 /* Resources */,
+				36367CFD2C7E63A300AC32FF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -484,6 +507,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368FDAE32C7F93D5001B8745 /* HomeData.json in Resources */,
 				36B823622C63FAB500DD01B1 /* LaunchScreen.storyboard in Resources */,
 				36B8235F2C63FAB500DD01B1 /* Assets.xcassets in Resources */,
 				36D39A9F2C6D7EF5005F5368 /* GoogleService-Info.plist in Resources */,
@@ -491,6 +515,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36367CFD2C7E63A300AC32FF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		36B8234E2C63FAB000DD01B1 /* Sources */ = {
@@ -521,6 +570,7 @@
 				36B823582C63FAB000DD01B1 /* SceneDelegate.swift in Sources */,
 				36B8239C2C646DEB00DD01B1 /* StoryCardCollectionViewCellScreen.swift in Sources */,
 				36218E482C76887E00C7D735 /* RegisterVC.swift in Sources */,
+				368FDAE62C7F977D001B8745 /* HomeService.swift in Sources */,
 				36B823A22C6477AE00DD01B1 /* Story.swift in Sources */,
 				3618598D2C66D4F9002685E0 /* Posts.swift in Sources */,
 			);
@@ -574,7 +624,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -666,6 +716,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 9VXHB7ZS42;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MVVMFirstProject/Info.plist;

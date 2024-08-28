@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseCrashlytics
 
 protocol LoginScreenProtocol : AnyObject {
     func tappedLoginButton()
@@ -83,7 +84,9 @@ class LoginScreen: UIView{
     }()
     
     @objc func tappedRegisterButton(_ sender: UIButton){
-        delegate?.tappedRegisterButton()
+//        delegate?.tappedRegisterButton()
+        let numbers = [0]
+              let _ = numbers[1]
     }
     
     
