@@ -11,7 +11,7 @@ Responsive Design: Optimized for iOS devices, ensuring a smooth and consistent e
 
 - **Swift:** The programming language used for development.
 - **UIKit:** Framework for designing the user interface and handling user interactions.
-- **FirebaseAuth:** Framework for authentication login and register.
+- **FirebaseAuth:** Framework for authentication login and register
 
 ## Getting Started
 
