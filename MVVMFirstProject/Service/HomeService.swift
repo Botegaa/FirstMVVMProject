@@ -8,15 +8,16 @@ import UIKit
 
 class HomeService {
     
-    func getHomeDataJson(completion: @escaping(Posts?, Error?)-> Void){
+    func getHomeDataJson(completion: @escaping(HomeData?, Error?)-> Void){
         if let url = Bundle.main.url(forResource: "HomeData", withExtension: "json"){
             do {
                 let data = try Data(contentsOf: url)
-                
-            } catch  {
-                
+                let homeData: HomeData = try JSONDecoder().decode(HomeData.self, from: data)
+                completion(homeData, nil)
+            } catch {
+                completion(nil, error)
             }
         }
+        
     }
-
 }
